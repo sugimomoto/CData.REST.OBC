@@ -1,0 +1,222 @@
+<rsb:script xmlns:rsb="http://www.rssbus.com/ns/rsbscript/2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <rsb:info title="json" desc="Generated schema file." xmlns:other="http://www.rssbus.com/ns/rsbscript/2/other">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="社員番号"   xs:type="string"   readonly="false"              other:xPath="/json/HM3010001"   />
+    <attr name="出勤日数（勤怠日数１）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110001"   />
+    <attr name="休出日数（勤怠日数２）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110002"   />
+    <attr name="特休日数（勤怠日数３）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110003"   />
+    <attr name="有休日数（有休１）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110004"   />
+    <attr name="時間有休（有休1-1）"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110005"   />
+    <attr name="代替休日数（代替休１）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110006"   />
+    <attr name="時間代替休（代替休1-1）"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110007"   />
+    <attr name="欠勤日数（勤怠日数４）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110008"   />
+    <attr name="有休残（有休２）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110009"   />
+    <attr name="有休残時間（有休2-1）"   xs:type="string" readonly="false"              other:xPath="/json/HM5110010"   />
+    <attr name="時間有休残（有休2-2）"   xs:type="string" readonly="false"              other:xPath="/json/HM5110011"   />
+    <attr name="代替休残（代替休２）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110012"   />
+    <attr name="代替休残時間（代替休2-1）"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110013"   />
+    <attr name="代替振替日数（代替休３）"   xs:type="integer"   readonly="false"              other:xPath="/json/HM5110014"   />
+    <attr name="代替振替時間（代替休3-1）"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110015"   />
+    <attr name="出勤時間（勤怠時間１）"   xs:type="string" readonly="false"              other:xPath="/json/HM5110030"   />
+    <attr name="遅早時間（勤怠時間２）"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110031"   />
+    <attr name="勤怠時間３"   xs:type="string" readonly="false"              other:xPath="/json/HM5110032"   />
+    <attr name="勤怠時間４"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110033"   />
+    <attr name="勤怠時間５"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110034"   />
+    <attr name="勤怠時間６"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110035"   />
+    <attr name="勤怠時間７"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110036"   />
+    <attr name="勤怠時間８"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110037"   />
+    <attr name="勤怠時間９"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110038"   />
+    <attr name="勤怠時間１０"   xs:type="string"     readonly="false"              other:xPath="/json/HM5110039"   />
+    <attr name="雇用区分"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112201"   />
+    <attr name="雇用区分_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112201_N" />
+    <attr name="在籍区分"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112202"   />
+    <attr name="在籍区分_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112202_N" />
+    <attr name="性別"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112203"   />
+    <attr name="性別_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112203_N" />
+    <attr name="所属"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112204"   />
+    <attr name="所属_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112204_N" />
+    <attr name="役職"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112205"   />
+    <attr name="役職_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112205_N" />
+    <attr name="勤務地"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112206"   />
+    <attr name="勤務地_N" xs:type="unknown"  readonly="false"              other:xPath="/json/HM5112206_N" />
+    <attr name="職種"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112207"   />
+    <attr name="職種_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112207_N" />
+    <attr name="職務"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112208"   />
+    <attr name="職務_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112208_N" />
+    <attr name="資格等級"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112209"   />
+    <attr name="資格等級_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112209_N" />
+    <attr name="任意項目１"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112210"   />
+    <attr name="任意項目１_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5112210_N" />
+    <attr name="任意項目２"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112211"   />
+    <attr name="任意項目２_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5112211_N" />
+    <attr name="任意項目３"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112212"   />
+    <attr name="任意項目３_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5112212_N" />
+    <attr name="給与体系"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112213"   />
+    <attr name="給与体系_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112213_N" />
+    <attr name="給与区分"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112214"   />
+    <attr name="給与区分_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112214_N" />
+    <attr name="基本給単価"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112215"   />
+    <attr name="時給単価（日給＋時給）"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112216"   />
+    <attr name="居住者区分"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112217"   />
+    <attr name="居住者区分_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112217_N" />
+    <attr name="健保標準報酬"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112220"   />
+    <attr name="厚年標準報酬_N"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112221"   />
+    <attr name="事業区分"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112222"   />
+    <attr name="事業区分_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112222_N" />
+    <attr name="従業員区分"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112224"   />
+    <attr name="従業員区分_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112224_N" />
+    <attr name="区分１"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112225"   />
+    <attr name="区分１_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112225_N" />
+    <attr name="区分２"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112226"   />
+    <attr name="区分２_N" xs:type="string"   readonly="false"              other:xPath="/json/HM5112226_N" />
+    <attr name="区分３"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112227"   />
+    <attr name="区分３_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5112227_N" />
+    <attr name="区分４"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112228"   />
+    <attr name="区分４_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5112228_N" />
+    <attr name="区分５"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112229"   />
+    <attr name="区分５_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5112229_N" />
+    <attr name="社保報酬（金銭）通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112233"   />
+    <attr name="社保報酬（金銭）課税通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112234"   />
+    <attr name="社保報酬（現物）通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112235"   />
+    <attr name="社保報酬（現物）課税通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112236"   />
+    <attr name="社保固定的賃金通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112237"   />
+    <attr name="社保固定的賃金課税通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112238"   />
+    <attr name="社保固定的賃金基本給単価"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112239"   />
+    <attr name="離職証明書対象基準通勤手当"   xs:type="string"   readonly="false"              other:xPath="/json/HM5112240"   />
+    <attr name="PaymentTime"   xs:type="string"   readonly="false"              other:xPath=""   />
+
+  </rsb:info>
+  <rsb:set attr="DataModel" value="DOCUMENT" />
+
+  <rsb:set attr="JSONPath" value="$." />
+
+  <rsb:set attr="header:name" value="accept"/>
+  <rsb:set attr="header:value" value="application/json"/>
+
+  <rsb:set attr="ContentType" value="application/json"/>
+
+  <!-- 契約IDとアクセストークンは接続文字列で指定します。-->
+  <rsb:set attr="header:name#2" value="X-OBC-TenantID"/>
+  <rsb:set attr="header:value#2" value="[_connection.TenantID]"/>
+
+  <rsb:set attr="header:name#3" value="X-OBC-SubscriptionKey"/>
+  <rsb:set attr="header:value#3" value="[_connection.SubscriptionKey]"/>
+
+  <rsb:set attr="encodepostdata" value="false" />
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <rsb:script method="GET">
+
+    <rsb:set attr="method" value="POST"/>
+    <rsb:set  attr="uri"  value="https://api-sandbox.obc.jp/pre-hm/ExportSalarySlip" />
+    <rsb:set  attr="PaymentTimeValue" value="[PaymentTime | def('2018090')]" />
+
+    <rsb:set attr="data">
+{
+	"PaymentTime":"[PaymentTimeValue]",
+	"itemList":\[ 
+		"HM3010001",
+		"HM5110001",
+		"HM5110002",
+		"HM5110003",
+		"HM5110004",
+		"HM5110005",
+		"HM5110006",
+		"HM5110007",
+		"HM5110008",
+		"HM5110009",
+		"HM5110010",
+		"HM5110011",
+		"HM5110012",
+		"HM5110013",
+		"HM5110014",
+		"HM5110015",
+		"HM5110030",
+		"HM5110031",
+		"HM5110032",
+		"HM5110033",
+		"HM5110034",
+		"HM5110035",
+		"HM5110036",
+		"HM5110037",
+		"HM5110038",
+		"HM5110039",
+		"HM5112201",
+		"HM5112202",
+		"HM5112203",
+		"HM5112204",
+		"HM5112205",
+		"HM5112206",
+		"HM5112207",
+		"HM5112208",
+		"HM5112209",
+		"HM5112210",
+		"HM5112211",
+		"HM5112212",
+		"HM5112213",
+		"HM5112214",
+		"HM5112215",
+		"HM5112216",
+		"HM5112217",
+		"HM5112218",
+		"HM5112219",
+		"HM5112220",
+		"HM5112221",
+		"HM5112222",
+		"HM5112223",
+		"HM5112224",
+		"HM5112225",
+		"HM5112226",
+		"HM5112227",
+		"HM5112228",
+		"HM5112229",
+		"HM5112230",
+		"HM5112231",
+		"HM5112232",
+		"HM5112233",
+		"HM5112234",
+		"HM5112235",
+		"HM5112236",
+		"HM5112237",
+		"HM5112238",
+		"HM5112239",
+		"HM5112240"
+		\], 
+	"sort1":"HM3020803", 
+}
+    </rsb:set>
+
+    <rsb:call op="jsonproviderGet">
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <rsb:script method="POST">
+    <rsb:set attr="method" value="POST"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Inserts are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <rsb:script method="MERGE">
+    <rsb:set attr="method" value="PUT"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Updates are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <rsb:script method="DELETE">
+    <rsb:set attr="method" value="DELETE"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Deletes are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+</rsb:script>

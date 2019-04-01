@@ -1,0 +1,200 @@
+<rsb:script xmlns:rsb="http://www.rssbus.com/ns/rsbscript/2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <rsb:info title="json" desc="Generated schema file." xmlns:other="http://www.rssbus.com/ns/rsbscript/2/other">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="社員番号"   xs:type="string"  readonly="false"    key="true"          other:xPath="/json/HM3010001"   />
+    <attr name="支給１（基本賞与）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120001"   />
+    <attr name="支給２"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120002"   />
+    <attr name="支給３"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120003"   />
+    <attr name="支給４"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120004"   />
+    <attr name="支給５"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120005"   />
+    <attr name="支給６"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120006"   />
+    <attr name="支給７"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120007"   />
+    <attr name="支給８"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120008"   />
+    <attr name="支給９"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120009"   />
+    <attr name="支給１０"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120010"   />
+    <attr name="支給１１"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120011"   />
+    <attr name="支給１２"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120012"   />
+    <attr name="支給１３"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120013"   />
+    <attr name="支給１４"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120014"   />
+    <attr name="支給１５"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120015"   />
+    <attr name="支給１６"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120016"   />
+    <attr name="支給１７"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120017"   />
+    <attr name="支給１８"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120018"   />
+    <attr name="支給１９"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120019"   />
+    <attr name="支給２０"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120020"   />
+    <attr name="控除１（健康保険料）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120201"   />
+    <attr name="控除1-1（介護保険料）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120202"   />
+    <attr name="控除２（厚生年金保険）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120203"   />
+    <attr name="控除３（厚生年金基金）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120204"   />
+    <attr name="控除４（雇用保険料）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120205"   />
+    <attr name="控除５（所得税）"   xs:type="integer"  readonly="false"              other:xPath="/json/HM5120206"   />
+    <attr name="雇用区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122201"   />
+    <attr name="雇用区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122201_N" />
+    <attr name="在籍区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122202"   />
+    <attr name="在籍区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122202_N" />
+    <attr name="性別"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122203"   />
+    <attr name="性別_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122203_N" />
+    <attr name="所属"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122204"   />
+    <attr name="所属_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122204_N" />
+    <attr name="役職"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122205"   />
+    <attr name="役職_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122205_N" />
+    <attr name="勤務地"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122206"   />
+    <attr name="勤務地_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122206_N" />
+    <attr name="職種"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122207"   />
+    <attr name="職種_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122207_N" />
+    <attr name="職務"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122208"   />
+    <attr name="職務_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122208_N" />
+    <attr name="資格等級"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122209"   />
+    <attr name="資格等級_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122209_N" />
+    <attr name="任意項目１"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122210"   />
+    <attr name="任意項目１_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122210_N" />
+    <attr name="任意項目２"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122211"   />
+    <attr name="任意項目２_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122211_N" />
+    <attr name="任意項目３"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122212"   />
+    <attr name="任意項目３_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122212_N" />
+    <attr name="給与体系"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122213"   />
+    <attr name="_N給与体系" xs:type="string"  readonly="false"              other:xPath="/json/HM5122213_N" />
+    <attr name="給与区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122214"   />
+    <attr name="給与区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122214_N" />
+    <attr name="居住者区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122215"   />
+    <attr name="居住者区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122215_N" />
+    <attr name="事業区分/労災保険事業区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122218"   />
+    <attr name="事業区分/労災保険事業区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122218_N" />
+    <attr name="従業員区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122220"   />
+    <attr name="従業員区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122220_N" />
+    <attr name="区分１"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122221"   />
+    <attr name="区分１_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122221_N" />
+    <attr name="区分２"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122222"   />
+    <attr name="区分２_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122222_N" />
+    <attr name="区分３"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122223"   />
+    <attr name="区分３_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122223_N" />
+    <attr name="区分４"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122224"   />
+    <attr name="区分４_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122224_N" />
+    <attr name="区分５"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122225"   />
+    <attr name="区分５_N" xs:type="string" readonly="false"              other:xPath="/json/HM5122225_N" />
+    <attr name="役員賞与区分"   xs:type="string"  readonly="false"              other:xPath="/json/HM5122226"   />
+    <attr name="役員賞与区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM5122226_N" />
+    <attr name="PaymentTime"   xs:type="string"   readonly="false"              other:xPath=""   />
+
+ </rsb:info>
+  <rsb:set attr="DataModel" value="DOCUMENT" />
+
+  <rsb:set attr="JSONPath" value="$." />
+
+  <rsb:set attr="header:name" value="accept"/>
+  <rsb:set attr="header:value" value="application/json"/>
+
+  <rsb:set attr="ContentType" value="application/json"/>
+
+  <!-- 契約IDとアクセストークンは接続文字列で指定します。-->
+  <rsb:set attr="header:name#2" value="X-OBC-TenantID"/>
+  <rsb:set attr="header:value#2" value="[_connection.TenantID]"/>
+
+  <rsb:set attr="header:name#3" value="X-OBC-SubscriptionKey"/>
+  <rsb:set attr="header:value#3" value="[_connection.SubscriptionKey]"/>
+
+  <rsb:set attr="encodepostdata" value="false" />
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <rsb:script method="GET">
+
+    <rsb:set attr="method" value="POST"/>
+    <rsb:set  attr="uri"  value="https://api-sandbox.obc.jp/pre-hm/ExportBonusSlip" />
+    <rsb:set  attr="PaymentTimeValue" value="[PaymentTime | def('201801')]" />
+
+    <rsb:set attr="data">
+{
+	"PaymentTime":"[PaymentTimeValue]",
+	"itemList":\[ 
+		"HM3010001",
+		"HM5120001",
+		"HM5120002",
+		"HM5120003",
+		"HM5120004",
+		"HM5120005",
+		"HM5120006",
+		"HM5120007",
+		"HM5120008",
+		"HM5120009",
+		"HM5120010",
+		"HM5120011",
+		"HM5120012",
+		"HM5120013",
+		"HM5120014",
+		"HM5120015",
+		"HM5120016",
+		"HM5120017",
+		"HM5120018",
+		"HM5120019",
+		"HM5120020",
+		"HM5120201",
+		"HM5120202",
+		"HM5120203",
+		"HM5120204",
+		"HM5120205",
+		"HM5120206",
+		"HM5122201",
+		"HM5122202",
+		"HM5122203",
+		"HM5122204",
+		"HM5122205",
+		"HM5122206",
+		"HM5122207",
+		"HM5122208",
+		"HM5122209",
+		"HM5122210",
+		"HM5122211",
+		"HM5122212",
+		"HM5122213",
+		"HM5122214",
+		"HM5122215",
+		"HM5122216",
+		"HM5122217",
+		"HM5122218",
+		"HM5122219",
+		"HM5122220",
+		"HM5122221",
+		"HM5122222",
+		"HM5122223",
+		"HM5122224",
+		"HM5122225",
+		"HM5122226"
+		\], 
+	"sort1":"HM3020803", 
+}
+    </rsb:set>
+
+    <rsb:call op="jsonproviderGet">
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <rsb:script method="POST">
+    <rsb:set attr="method" value="POST"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Inserts are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <rsb:script method="MERGE">
+    <rsb:set attr="method" value="PUT"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Updates are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <rsb:script method="DELETE">
+    <rsb:set attr="method" value="DELETE"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Deletes are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+</rsb:script>

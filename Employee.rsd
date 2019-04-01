@@ -1,0 +1,191 @@
+<rsb:script xmlns:rsb="http://www.rssbus.com/ns/rsbscript/2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <rsb:info title="Employee" desc="Generated schema file." xmlns:other="http://www.rssbus.com/ns/rsbscript/2/other">
+    <!-- You can modify the name, type, and column size here. -->
+      <attr name="社員番号"	xs:type="string"  readonly="false"     key="true"         other:xPath="/json/HM3010001"  />
+      <attr name="氏名(フリガナ)"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010002"  />
+      <attr name="氏名"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010003"  />
+      <attr name="在籍区分"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010006"  />
+      <attr name="在籍区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM3010006_N"  />
+      <attr name="雇用区分"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010005"  />
+      <attr name="雇用区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM3010005_N"  />
+      <attr name="性別"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010008"  />
+      <attr name="性別_N" xs:type="string"  readonly="false"              other:xPath="/json/HM3010008_N"  />
+      <attr name="生年月日"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010010"  />
+      <attr name="入社年月日"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010011"  />
+      <attr name="退職年月日"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010013"  />
+      <attr name="退職区分"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010014"  />
+      <attr name="退職区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM3010014_N"  />
+      <attr name="出向受入区分"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010023"  />
+      <attr name="出向受入区分_N" xs:type="string"  readonly="false"              other:xPath="/json/HM3010023_N"  />
+      <attr name="職場氏名(フリガナ)"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010029"  />
+      <attr name="職場氏名"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010030"  />
+      <attr name="旧姓(フリガナ)"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010032"  />
+      <attr name="旧姓"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010033"  />
+      <attr name="郵便番号"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020104"  />
+      <attr name="都道府県"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020105"  />
+      <attr name="市区町村"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020106"  />
+      <attr name="番地"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020107"  />
+      <attr name="マンション／ビル等"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020108"  />
+      <attr name="住所カナ"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020109"  />
+      <attr name="電話番号"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020110"  />
+      <attr name="転居年月日"	xs:type="string"  readonly="false"              other:xPath="/json/HM3020101"  />
+      <attr name="社用e-Mail１"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010037"  />
+      <attr name="社用e-Mail２"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010038"  />
+      <attr name="個人用e-Mail１"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010035"  />
+      <attr name="個人用e-Mail２"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010036"  />
+      <attr name="備考"	xs:type="string"  readonly="false"              other:xPath="/json/HM3010906"  />
+  </rsb:info>
+
+  <rsb:set attr="DataModel" value="DOCUMENT" />
+
+  <rsb:set attr="JSONPath" value="$." />
+
+
+  <rsb:set attr="header:name" value="accept"/>
+  <rsb:set attr="header:value" value="application/json"/>
+
+  <rsb:set attr="ContentType" value="application/json"/>
+
+  <!-- 契約IDとアクセストークンは接続文字列で指定します。-->
+  <rsb:set attr="header:name#2" value="X-OBC-TenantID"/>
+  <rsb:set attr="header:value#2" value="[_connection.TenantID]"/>
+
+  <rsb:set attr="header:name#3" value="X-OBC-SubscriptionKey"/>
+  <rsb:set attr="header:value#3" value="[_connection.SubscriptionKey]"/>
+
+  <rsb:set attr="encodepostdata" value="false" />
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <rsb:script method="GET">
+
+    <rsb:set attr="method" value="POST"/>
+    <rsb:set  attr="uri"  value="https://api-sandbox.obc.jp/pre-hm/ExportEmployee" />
+
+    <rsb:set attr="data">
+    {
+      "itemList":\[ 
+        "HM3010001",
+        "HM3010002",
+        "HM3010003",
+        "HM3010006",
+        "HM3010005",
+        "HM3010008",
+        "HM3010010",
+        "HM3010011",
+        "HM3010013",
+        "HM3010014",
+        "HM3010023",
+        "HM3010029",
+        "HM3010030",
+        "HM3010032",
+        "HM3010033",
+        "HM3020104",
+        "HM3020105",
+        "HM3020106",
+        "HM3020107",
+        "HM3020108",
+        "HM3020109",
+        "HM3020110",
+        "HM3020101",
+        "HM3010037",
+        "HM3010038",
+        "HM3010035",
+        "HM3010036",
+        "HM3010906"
+        \]
+    }    
+    </rsb:set>
+
+    <rsb:call op="jsonproviderGet">
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <rsb:script method="POST">
+
+    <rsb:set attr="method" value="POST"/>
+    <rsb:set  attr="uri"  value="https://api-sandbox.obc.jp/pre-hm/ImportEmployee" />
+
+    <!-- 格納するための変数を定義 -->
+    <rsb:set attr="_input.json" value="def"/>
+
+    <!-- Insertで指定されたカラムを取得 -->
+    <rsb:enum list="[_query.selectcolumns]" separator=",">
+
+      <!-- 初期状態のカラムは[coulmnname]の状態のため、[]を削除 -->
+      <rsb:set attr="base" value="[_value | replace('\[','') | replace('\]','')]" />
+      
+      <rsb:if attr="_input.json" value="def" operator="equals">
+        <rsb:else>
+          <rsb:set attr="_input.json" value='[_input.json], "[base]" : "[_input.[base]]"' />
+        </rsb:else>
+        <rsb:set attr="_input.json" value='"[base]" : "[_input.[base]]"' />
+      </rsb:if>
+    </rsb:enum>
+
+    <rsb:set attr="data">
+    {
+      "dataList": 
+      [
+          {
+            [_input.json]  
+          }
+      ]
+    }
+    </rsb:set>
+
+    <rsb:call op="jsonproviderGet">
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <rsb:script method="MERGE">
+    <rsb:set attr="method" value="POST"/>
+    <rsb:set  attr="uri"  value="https://api-sandbox.obc.jp/pre-hm/ImportEmployee" />
+
+    <!-- 格納するための変数を定義 -->
+    <rsb:set attr="_input.json" value="def"/>
+
+    <!-- Insertで指定されたカラムを取得 -->
+    <rsb:enum list="[_query.selectcolumns]" separator=",">
+
+      <!-- 初期状態のカラムは[coulmnname]の状態のため、[]を削除 -->
+      <rsb:set attr="base" value="[_value | replace('\[','') | replace('\]','')]" />
+      
+      <rsb:if attr="_input.json" value="def" operator="equals">
+        <rsb:else>
+          <rsb:set attr="_input.json" value='[_input.json], "[base]" : "[_input.[base]]"' />
+        </rsb:else>
+        <rsb:set attr="_input.json" value='"[base]" : "[_input.[base]]"' />
+      </rsb:if>
+    </rsb:enum>
+
+    <rsb:set attr="data">
+    {
+      "dataList": 
+      [
+          {
+            [_input.json]  
+          }
+      ]
+    }
+    </rsb:set>
+
+    <rsb:call op="jsonproviderGet">
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <rsb:script method="DELETE">
+    <rsb:set attr="method" value="DELETE"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Deletes are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+</rsb:script>
